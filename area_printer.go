@@ -1,10 +1,11 @@
 package pterm
 
 import (
+	"fmt"
 	"strings"
 
 	"atomicgo.dev/cursor"
-
+	"github.com/jroimartin/gocui"
 	"github.com/pterm/pterm/internal"
 )
 
@@ -24,6 +25,11 @@ type AreaPrinter struct {
 	area *cursor.Area
 }
 
+type KeyDescriptor struct {
+	key gocui.Key
+	mod gocui.Modifier
+	keyFunc func(*gocui.Gui,*gocui.View) error
+}
 // GetContent returns the current area content.
 func (p *AreaPrinter) GetContent() string {
 	return p.content
@@ -122,6 +128,34 @@ func (p *AreaPrinter) GenericStop() (*LivePrinter, error) {
 	return &lp, nil
 }
 
+func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers ...gocui.Manager) (err error) {
+	// pause pterm ui
+	// used to copy data before hiding isActive 
+	area.RemoveWhenDone = true
+	area_copy := area
+	area.Stop()
+	// ...
+	// gocui initialize
+	g, err := gocui.NewGui(gocui.Output256)
+	if err != nil {
+		return err
+	}
+	//defer the showing of pterm ui
+	defer func() {
+		g.Close()
+		area_copy.Start()
+	} ()
+	g.SetManager(managers...)
+	// set KeyBinds
+	for view, val := range KeyBinds {
+		if err := g.SetKeybinding(view,val.key,val.mod,val.keyFunc); err != nil {
+			fmt.Printf("Couldn't establish keybind for %s\n",view)
+			return err
+		}
+	}
+	//cleanup gocui
+	return err
+}
 // Wrapper function that clears the content of the Area.
 // Moves the cursor to the bottom of the terminal, clears n lines upwards from
 // the current position and moves the cursor again.
