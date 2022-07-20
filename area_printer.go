@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"atomicgo.dev/cursor"
+	"github.com/forvitinn/pterm/internal"
 	"github.com/jroimartin/gocui"
-	"github.com/pterm/forvitinn/internal"
 )
 
 // DefaultArea is the default area printer.
