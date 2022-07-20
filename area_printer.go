@@ -26,9 +26,9 @@ type AreaPrinter struct {
 }
 
 type KeyDescriptor struct {
-	key gocui.Key
-	mod gocui.Modifier
-	keyFunc func(*gocui.Gui,*gocui.View) error
+	Key gocui.Key
+	Mod gocui.Modifier
+	KeyFunc func(*gocui.Gui,*gocui.View) error
 }
 // GetContent returns the current area content.
 func (p *AreaPrinter) GetContent() string {
@@ -148,7 +148,7 @@ func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers 
 	g.SetManager(managers...)
 	// set KeyBinds
 	for view, val := range KeyBinds {
-		if err := g.SetKeybinding(view,val.key,val.mod,val.keyFunc); err != nil {
+		if err := g.SetKeybinding(view,val.Key,val.Mod,val.KeyFunc); err != nil {
 			fmt.Printf("Couldn't establish keybind for %s\n",view)
 			return err
 		}
