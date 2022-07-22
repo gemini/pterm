@@ -9,6 +9,6 @@ require (
 	github.com/gookit/color v1.5.0
 	github.com/lithammer/fuzzysearch v1.1.5
 	github.com/mattn/go-runewidth v0.0.13
-	github.com/pterm/pterm v0.12.40
+	github.com/forvitinn/pterm v0.12.40
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
 )
