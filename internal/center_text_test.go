@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/MarvinJWendt/testza"
-	"github.com/pterm/pterm/internal"
+	"github.com/forvitinn/pterm/internal"
 )
 
 func TestCenterText(t *testing.T) {
