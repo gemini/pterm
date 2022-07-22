@@ -8,7 +8,7 @@ import (
 
 	"github.com/MarvinJWendt/testza"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 	"github.com/forvitinn/pterm/internal"
 )
 

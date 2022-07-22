@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 // Slice of strings with placeholder text.

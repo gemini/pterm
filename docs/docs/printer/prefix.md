@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![PrefixPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/prefix/animation.svg)
 
-<p align="center"><a href="https://github.com/pterm/pterm/blob/master/_examples/prefix/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/prefix/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -26,8 +26,8 @@ pterm.Fatal.Println("Hello, World!") // Print Fatal.
 
 | Function                                                                                      | Description                                 |
 | --------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [FormattedPrefix](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.GetFormattedPrefix) | Returns the Prefix as a styled text string. |
-| [PrintOnError](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.PrintOnError)          | Only prints if the given error is not nil.  |
+| [FormattedPrefix](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.GetFormattedPrefix) | Returns the Prefix as a styled text string. |
+| [PrintOnError](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.PrintOnError)          | Only prints if the given error is not nil.  |
 
 ### Options
 
@@ -58,18 +58,18 @@ pterm.Fatal.Println("Hello, World!") // Print Fatal.
 
 | Option                                                                                           | Type                                                       |
 | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| [Debugger](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithDebugger)                 | bool                                                       |
-| [Fatal](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithFatal)                       | bool                                                       |
-| [Debugger](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithDebugger)                 | [\*Style](https://pkg.go.dev/github.com/pterm/pterm#Style) |
-| [Prefix](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithPrefix)                     | [Prefix](https://pkg.go.dev/github.com/pterm/pterm#Prefix) |
-| [Scope](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithPrefix)                      | [Scope](https://pkg.go.dev/github.com/pterm/pterm#Scope)   |
-| [ShowLineNumber](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithShowLineNumber)     | bool                                                       |
-| [LineNumberOffset](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithLineNumberOffset) | int                                                        |
-| [Writer](https://pkg.go.dev/github.com/pterm/pterm#PrefixPrinter.WithWriter)                     | io.Writer                                                  |
+| [Debugger](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithDebugger)                 | bool                                                       |
+| [Fatal](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithFatal)                       | bool                                                       |
+| [Debugger](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithDebugger)                 | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
+| [Prefix](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithPrefix)                     | [Prefix](https://pkg.go.dev/github.com/forvitinn/pterm#Prefix) |
+| [Scope](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithPrefix)                      | [Scope](https://pkg.go.dev/github.com/forvitinn/pterm#Scope)   |
+| [ShowLineNumber](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithShowLineNumber)     | bool                                                       |
+| [LineNumberOffset](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithLineNumberOffset) | int                                                        |
+| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#PrefixPrinter.WithWriter)                     | io.Writer                                                  |
 
 ### Output functions
 
-> This printer implements the interface [`TextPrinter`](https://github.com/pterm/pterm/blob/master/interface_text_printer.go)
+> This printer implements the interface [`TextPrinter`](https://github.com/forvitinn/pterm/blob/master/interface_text_printer.go)
 
 | Function                                   | Description                                                                                  |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------- |

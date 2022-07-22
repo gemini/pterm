@@ -9,7 +9,7 @@
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Create a fork of the default table, fill it with data and print it.

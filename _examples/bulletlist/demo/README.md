@@ -6,8 +6,8 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/forvitinn/pterm"
+	"github.com/forvitinn/pterm/putils"
 )
 
 func main() {
