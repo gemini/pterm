@@ -186,7 +186,7 @@ func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, m
 	//cleanup gocui
 	return err
 }
-func test_gocui() {
+func Test_gocui() {
 func layout(g *gocui.Gui) error {
 	maxX, maxY := g.Size()
 	if _, err := g.SetView("side", -1, -1, int(0.2*float32(maxX)), maxY-5); err != nil &&
