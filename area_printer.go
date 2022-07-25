@@ -3,7 +3,7 @@ package pterm
 import (
 	"fmt"
 	"strings"
-
+	"log"
 	"atomicgo.dev/cursor"
 	"github.com/forvitinn/pterm/internal"
 	"github.com/jroimartin/gocui"
