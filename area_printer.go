@@ -186,7 +186,8 @@ func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, m
 	//cleanup gocui
 	return err
 }
-func (p *AreaPrinter) Test_gocui() {
+// copy pasta p2 
+
 func layout(g *gocui.Gui) error {
 	maxX, maxY := g.Size()
 	if _, err := g.SetView("side", -1, -1, int(0.2*float32(maxX)), maxY-5); err != nil &&
@@ -208,7 +209,7 @@ func quit(g *gocui.Gui, v *gocui.View) error {
 	return gocui.ErrQuit
 }
 
-func main() {
+func render_gocuilay() {
 	g, err := gocui.NewGui(gocui.OutputNormal)
 	if err != nil {
 		log.Panicln(err)
@@ -225,7 +226,9 @@ func main() {
 		log.Panicln(err)
 	}
 }
- main()
+//end of copy pasta
+func (p *AreaPrinter) Test_gocui() {
+	render_gocuilay()
 }
 // Wrapper function that clears the content of the Area.
 // Moves the cursor to the bottom of the terminal, clears n lines upwards from
