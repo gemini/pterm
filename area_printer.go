@@ -26,10 +26,11 @@ type AreaPrinter struct {
 }
 
 type KeyDescriptor struct {
-	Key gocui.Key
-	Mod gocui.Modifier
-	KeyFunc func(*gocui.Gui,*gocui.View) error
+	Key     gocui.Key
+	Mod     gocui.Modifier
+	KeyFunc func(*gocui.Gui, *gocui.View) error
 }
+
 // GetContent returns the current area content.
 func (p *AreaPrinter) GetContent() string {
 	return p.content
@@ -130,7 +131,7 @@ func (p *AreaPrinter) GenericStop() (*LivePrinter, error) {
 
 func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers ...gocui.Manager) (err error) {
 	// pause pterm ui
-	// used to copy data before hiding isActive 
+	// used to copy data before hiding isActive
 	area.RemoveWhenDone = true
 	area_copy := area
 	area.Stop()
@@ -144,12 +145,12 @@ func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers 
 	defer func() {
 		g.Close()
 		area_copy.Start()
-	} ()
+	}()
 	g.SetManager(managers...)
 	// set KeyBinds
 	for view, val := range KeyBinds {
-		if err := g.SetKeybinding(view,val.Key,val.Mod,val.KeyFunc); err != nil {
-			fmt.Printf("Couldn't establish keybind for %s\n",view)
+		if err := g.SetKeybinding(view, val.Key, val.Mod, val.KeyFunc); err != nil {
+			fmt.Printf("Couldn't establish keybind for %s\n", view)
 			return err
 		}
 	}
@@ -157,9 +158,9 @@ func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers 
 	return err
 }
 
-func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, manager func(*gocui.Gui) error) {
+func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, manager func(*gocui.Gui) error) error {
 	// pause pterm ui
-	// used to copy data before hiding isActive 
+	// used to copy data before hiding isActive
 	area.RemoveWhenDone = true
 	area_copy := area
 	area.Stop()
@@ -173,18 +174,19 @@ func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, m
 	defer func() {
 		g.Close()
 		area_copy.Start()
-	} ()
-	g.SetManager(manager)
+	}()
+	g.SetManagerFunc(manager)
 	// set KeyBinds
 	for view, val := range KeyBinds {
-		if err := g.SetKeybinding(view,val.Key,val.Mod,val.KeyFunc); err != nil {
-			fmt.Printf("Couldn't establish keybind for %s\n",view)
+		if err := g.SetKeybinding(view, val.Key, val.Mod, val.KeyFunc); err != nil {
+			fmt.Printf("Couldn't establish keybind for %s\n", view)
 			return err
 		}
 	}
 	//cleanup gocui
 	return err
 }
+
 // Wrapper function that clears the content of the Area.
 // Moves the cursor to the bottom of the terminal, clears n lines upwards from
 // the current position and moves the cursor again.
