@@ -156,6 +156,35 @@ func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers 
 	//cleanup gocui
 	return err
 }
+
+func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, manager func(gocui.Gui) error) {
+	// pause pterm ui
+	// used to copy data before hiding isActive 
+	area.RemoveWhenDone = true
+	area_copy := area
+	area.Stop()
+	// ...
+	// gocui initialize
+	g, err := gocui.NewGui(gocui.Output256)
+	if err != nil {
+		return err
+	}
+	//defer the showing of pterm ui
+	defer func() {
+		g.Close()
+		area_copy.Start()
+	} ()
+	g.SetManager(manager)
+	// set KeyBinds
+	for view, val := range KeyBinds {
+		if err := g.SetKeybinding(view,val.Key,val.Mod,val.KeyFunc); err != nil {
+			fmt.Printf("Couldn't establish keybind for %s\n",view)
+			return err
+		}
+	}
+	//cleanup gocui
+	return err
+}
 // Wrapper function that clears the content of the Area.
 // Moves the cursor to the bottom of the terminal, clears n lines upwards from
 // the current position and moves the cursor again.
