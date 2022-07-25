@@ -233,6 +233,6 @@ func (p *AreaPrinter) Test_gocui() {
 // Wrapper function that clears the content of the Area.
 // Moves the cursor to the bottom of the terminal, clears n lines upwards from
 // the current position and moves the cursor again.
-func Tp *AreaPrinter) Clear() {
+func (p *AreaPrinter) Clear() {
 	p.area.Clear()
 }
