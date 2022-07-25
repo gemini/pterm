@@ -157,7 +157,7 @@ func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers 
 	return err
 }
 
-func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, manager func(gocui.Gui) error) {
+func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, manager func(*gocui.Gui) error) {
 	// pause pterm ui
 	// used to copy data before hiding isActive 
 	area.RemoveWhenDone = true
