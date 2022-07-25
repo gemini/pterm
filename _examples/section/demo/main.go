@@ -1,6 +1,6 @@
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print a section with level one.

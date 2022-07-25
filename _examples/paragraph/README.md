@@ -9,7 +9,7 @@
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print a paragraph with a custom maximal width.
@@ -40,7 +40,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print long text with default paragraph printer.

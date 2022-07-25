@@ -17,7 +17,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -49,7 +49,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -89,7 +89,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -137,7 +137,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -176,7 +176,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// A BasicText printer is used to print text, without special formatting.
@@ -204,8 +204,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/forvitinn/pterm"
+	"github.com/forvitinn/pterm/putils"
 )
 
 func main() {
@@ -240,7 +240,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	pterm.Info.Println("This might not be rendered correctly on GitHub,\nbut it will work in a real terminal.\nThis is because GitHub does not use a monospaced font by default for SVGs")
@@ -273,7 +273,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -301,8 +301,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/forvitinn/pterm"
+	"github.com/forvitinn/pterm/putils"
 )
 
 func main() {
@@ -336,7 +336,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	pterm.DefaultCenter.Println("This text is centered!\nIt centeres the whole block by default.\nIn that way you can do stuff like this:")
@@ -363,7 +363,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print all colors
@@ -407,7 +407,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	for i := 0; i < 15; i++ {
@@ -440,7 +440,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -475,7 +475,7 @@ package main
 import (
 	"strings"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -519,7 +519,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print default error.
@@ -550,7 +550,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print strings with a custom RGB color.
@@ -583,8 +583,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/forvitinn/pterm"
+	"github.com/forvitinn/pterm/putils"
 )
 
 // Speed the demo up, by setting this flag.
@@ -853,7 +853,7 @@ func randomInt(min, max int) int {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print a default header.
@@ -877,10 +877,10 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
-	// All available options: https://pkg.go.dev/github.com/pterm/pterm#HeaderPrinter
+	// All available options: https://pkg.go.dev/github.com/forvitinn/pterm#HeaderPrinter
 
 	// Build on top of DefaultHeader
 	pterm.DefaultHeader. // Use DefaultHeader as base
@@ -918,7 +918,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -952,7 +952,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -988,7 +988,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -1022,7 +1022,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -1047,7 +1047,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -1071,7 +1071,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Declare panels in a two dimensional grid system.
@@ -1099,7 +1099,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print a paragraph with a custom maximal width.
@@ -1130,7 +1130,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print long text with default paragraph printer.
@@ -1161,7 +1161,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Enable debug messages.
@@ -1196,7 +1196,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 // Slice of strings with placeholder text.
@@ -1230,7 +1230,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print a section with level one.
@@ -1262,7 +1262,7 @@ package main
 import (
 	"time"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -1306,7 +1306,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Create styles as new variables
@@ -1333,7 +1333,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Create a fork of the default table, fill it with data and print it.
@@ -1372,7 +1372,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 	"reflect"
 	"time"
 )
@@ -1416,8 +1416,8 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
-	"github.com/pterm/pterm/putils"
+	"github.com/forvitinn/pterm"
+	"github.com/forvitinn/pterm/putils"
 )
 
 func main() {

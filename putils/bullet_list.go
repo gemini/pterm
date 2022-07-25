@@ -3,7 +3,7 @@ package putils
 import (
 	"strings"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 	"github.com/forvitinn/pterm/internal"
 )
 

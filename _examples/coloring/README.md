@@ -9,7 +9,7 @@
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print all colors
@@ -53,7 +53,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	for i := 0; i < 15; i++ {
@@ -86,7 +86,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -121,7 +121,7 @@ package main
 import (
 	"strings"
 
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -165,7 +165,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print default error.
@@ -196,7 +196,7 @@ func main() {
 ```go
 package main
 
-import "github.com/pterm/pterm"
+import "github.com/forvitinn/pterm"
 
 func main() {
 	// Print strings with a custom RGB color.

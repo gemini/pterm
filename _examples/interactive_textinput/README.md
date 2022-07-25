@@ -10,7 +10,7 @@
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {
@@ -35,7 +35,7 @@ func main() {
 package main
 
 import (
-	"github.com/pterm/pterm"
+	"github.com/forvitinn/pterm"
 )
 
 func main() {

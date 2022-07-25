@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![CenterPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/center/animation.svg)
 
-<p align="center"><a href="https://github.com/pterm/pterm/blob/master/_examples/center/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/center/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -30,12 +30,12 @@ pterm.DefaultCenter.Println("Hello,\nWorld!")
 
 | Option                                                                                                           | Type      |
 | ---------------------------------------------------------------------------------------------------------------- | --------- |
-| [CenterEachLineSeparately](https://pkg.go.dev/github.com/pterm/pterm#CenterPrinter.WithCenterEachLineSeparately) | ...bool   |
-| [Writer](https://pkg.go.dev/github.com/pterm/pterm#CenterPrinter.WithWriter)                                     | io.Writer |
+| [CenterEachLineSeparately](https://pkg.go.dev/github.com/forvitinn/pterm#CenterPrinter.WithCenterEachLineSeparately) | ...bool   |
+| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#CenterPrinter.WithWriter)                                     | io.Writer |
 
 ### Output functions
 
-> This printer implements the interface [`TextPrinter`](https://github.com/pterm/pterm/blob/master/interface_text_printer.go)
+> This printer implements the interface [`TextPrinter`](https://github.com/forvitinn/pterm/blob/master/interface_text_printer.go)
 
 | Function                                   | Description                                                                                  |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
