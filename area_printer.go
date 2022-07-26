@@ -25,11 +25,6 @@ type AreaPrinter struct {
 	area *cursor.Area
 }
 
-type KeyDescriptor struct {
-	Key     gocui.Key
-	Mod     gocui.Modifier
-	KeyFunc func(*gocui.Gui, *gocui.View) error
-}
 
 // GetContent returns the current area content.
 func (p *AreaPrinter) GetContent() string {
