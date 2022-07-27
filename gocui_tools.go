@@ -12,4 +12,4 @@ type KeyDescriptor struct {
 
 type GLayout func(*gocui.Gui) error
 type GKeyBindFunc func(*gocui.Gui, *gocui.View) error
-
+type GMapView2KeyDesc map[string]KeyDescriptor
