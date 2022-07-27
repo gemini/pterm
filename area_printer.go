@@ -226,18 +226,25 @@ func render_gocuilay() {
 func (p *AreaPrinter) Test_gocui() {
 	render_gocuilay()
 }
+
 func (p *AreaPrinter) GHandleFunc(glay GLayout,kd GMapView2KeyDesc) error {
-	p.Stop()
 	g, err := gocui.NewGui(gocui.Output256)
 	if err != nil {
 		return err
 	}
+
 	defer g.Close()
 	g.SetManagerFunc(glay)
+	
+	// set all keybindings on each view
 	for view, kd_instance := range kd {
 		if err := g.SetKeybinding(view, kd_instance.Key, kd_instance.Mod, kd_instance.KeyFunc); err != nil {
 			return nil
 		}
+	}
+	// start mainloop
+	if err := g.MainLoop(); err != nil && err != gocui.ErrQuit {
+		return err
 	}
 	return nil
 }
