@@ -1,8 +1,6 @@
 package pterm
 
 import (
-	"fmt"
-	"log"
 	"strings"
 
 	"atomicgo.dev/cursor"
@@ -124,12 +122,11 @@ func (p *AreaPrinter) GenericStop() (*LivePrinter, error) {
 	lp := LivePrinter(p)
 	return &lp, nil
 }
-
-func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers ...gocui.Manager) (err error) {
+//not in use & not tested
+//WIP
+func (area AreaPrinter) GHandleManagers(KeyBinds map[string]KeyDescriptor, managers ...gocui.Manager) (err error) {
 	// pause pterm ui
 	// used to copy data before hiding isActive
-	area.RemoveWhenDone = true
-	area_copy := area
 	area.Stop()
 	// ...
 	// gocui initialize
@@ -140,91 +137,18 @@ func (area AreaPrinter) HandleGocui(KeyBinds map[string]KeyDescriptor, managers 
 	//defer the showing of pterm ui
 	defer func() {
 		g.Close()
-		area_copy.Start()
 	}()
 	g.SetManager(managers...)
 	// set KeyBinds
 	for view, val := range KeyBinds {
 		if err := g.SetKeybinding(view, val.Key, val.Mod, val.KeyFunc); err != nil {
-			fmt.Printf("Couldn't establish keybind for %s\n", view)
 			return err
 		}
 	}
-	//cleanup gocui
-	return err
-}
-
-func (area AreaPrinter) HandleGocuiFunction(KeyBinds map[string]KeyDescriptor, manager func(*gocui.Gui) error) error {
-	// pause pterm ui
-	// used to copy data before hiding isActive
-	area.RemoveWhenDone = true
-	area_copy := area
-	area.Stop()
-	// ...
-	// gocui initialize
-	g, err := gocui.NewGui(gocui.Output256)
-	if err != nil {
-		return err
-	}
-	//defer the showing of pterm ui
-	defer func() {
-		g.Close()
-		area_copy.Start()
-	}()
-	g.SetManagerFunc(manager)
-	// set KeyBinds
-	for view, val := range KeyBinds {
-		if err := g.SetKeybinding(view, val.Key, val.Mod, val.KeyFunc); err != nil {
-			fmt.Printf("Couldn't establish keybind for %s\n", view)
-			return err
-		}
-	}
-	//cleanup gocui
-	return err
-}
-// copy pasta p2 
-
-func layout(g *gocui.Gui) error {
-	maxX, maxY := g.Size()
-	if _, err := g.SetView("side", -1, -1, int(0.2*float32(maxX)), maxY-5); err != nil &&
-		err != gocui.ErrUnknownView {
-		return err
-	}
-	if _, err := g.SetView("main", int(0.2*float32(maxX)), -1, maxX, maxY-5); err != nil &&
-		err != gocui.ErrUnknownView {
-		return err
-	}
-	if _, err := g.SetView("cmdline", -1, maxY-5, maxX, maxY); err != nil &&
-		err != gocui.ErrUnknownView {
-		return err
-	}
-	return nil
-}
-
-func quit(g *gocui.Gui, v *gocui.View) error {
-	return gocui.ErrQuit
-}
-
-func render_gocuilay() {
-	g, err := gocui.NewGui(gocui.OutputNormal)
-	if err != nil {
-		log.Panicln(err)
-	}
-	defer g.Close()
-
-	g.SetManagerFunc(layout)
-
-	if err := g.SetKeybinding("", gocui.KeyCtrlC, gocui.ModNone, quit); err != nil {
-		log.Panicln(err)
-	}
-
 	if err := g.MainLoop(); err != nil && err != gocui.ErrQuit {
-		log.Panicln(err)
+		return err
 	}
-}
-//end of copy pasta
-func (p *AreaPrinter) Test_gocui() {
-	render_gocuilay()
+	return err
 }
 
 func (p *AreaPrinter) GHandleFunc(glay GLayout,kd GMapView2KeyDesc) error {
