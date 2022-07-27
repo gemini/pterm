@@ -1,7 +1,7 @@
 package pterm
 
 import ( 
-	"github.com/jriomartin/gocui"
+	"github.com/jroimartin/gocui"
 )
 
 type KeyDescriptor struct {
