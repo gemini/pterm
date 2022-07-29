@@ -4,8 +4,8 @@ import (
 	"strings"
 
 	"atomicgo.dev/cursor"
-
 	"github.com/forvitinn/pterm/internal"
+	"github.com/jroimartin/gocui"
 )
 
 // DefaultArea is the default area printer.
@@ -23,6 +23,7 @@ type AreaPrinter struct {
 
 	area *cursor.Area
 }
+
 
 // GetContent returns the current area content.
 func (p *AreaPrinter) GetContent() string {
@@ -121,7 +122,57 @@ func (p *AreaPrinter) GenericStop() (*LivePrinter, error) {
 	lp := LivePrinter(p)
 	return &lp, nil
 }
+//not in use & not tested
+//WIP
+func (area AreaPrinter) GHandleManagers(kd GMapView2KeyDesc, managers ...gocui.Manager) error {
+	g, err := gocui.NewGui(gocui.Output256)
+	if err != nil {
+		return err
+	}
+	// defer the showing of pterm ui
+	defer func() {
+		g.Close()
+	}()
+	g.SetManager(managers...)
 
+	// set all keybindings on each view
+	for view, kd_instance := range kd {
+		if err := g.SetKeybinding(view, kd_instance.Key, kd_instance.Mod, kd_instance.KeyFunc); err != nil {
+			return nil
+		}
+	}
+	// start mainloop
+	if err := g.MainLoop(); err != nil && err != gocui.ErrQuit {
+		return err
+	}
+	return nil
+}
+
+// Give control over UI over to Gocui from pterm.area
+// This function must be provided with a gocui layout and a Map which maps Layout Views(Strings) to Keybins and their functions
+
+func (p *AreaPrinter) GHandleFunc(kd GMapView2KeyDesc, glay GLayout) error {
+	g, err := gocui.NewGui(gocui.Output256)
+	if err != nil {
+		return err
+	}
+
+	defer g.Close()
+	g.SetManagerFunc(glay)
+	
+	// set all keybindings on each view
+	for view, kd_instance := range kd {
+		if err := g.SetKeybinding(view, kd_instance.Key, kd_instance.Mod, kd_instance.KeyFunc); err != nil {
+			return nil
+		}
+	}
+
+	// start mainloop
+	if err := g.MainLoop(); err != nil && err != gocui.ErrQuit {
+		return err
+	}
+	return nil
+}
 // Wrapper function that clears the content of the Area.
 // Moves the cursor to the bottom of the terminal, clears n lines upwards from
 // the current position and moves the cursor again.

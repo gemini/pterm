@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![HeaderPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/header/animation.svg)
 
-<p align="center"><a href="https://github.com/pterm/pterm/blob/master/_examples/header/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/header/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -30,15 +30,15 @@ pterm.DefaultHeader.Println("Hello, World!")
 
 | Option                                                                                          | Type                                                       |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [BackgroundStyle](https://pkg.go.dev/github.com/pterm/pterm#BigTextPrinter.WithBackgroundStyle) | [\*Style](https://pkg.go.dev/github.com/pterm/pterm#Style) |
-| [FullWidth](https://pkg.go.dev/github.com/pterm/pterm#BigTextPrinter.WithFullWidth)             | ...bool                                                    |
-| [Margin](https://pkg.go.dev/github.com/pterm/pterm#BigTextPrinter.WithMargin)                   | int                                                        |
-| [TextStyle](https://pkg.go.dev/github.com/pterm/pterm#BigTextPrinter.WithTextStyle)             | [\*Style](https://pkg.go.dev/github.com/pterm/pterm#Style) |
-| [Writer](https://pkg.go.dev/github.com/pterm/pterm#BigTextPrinter.WithWriter)                   | io.Writer                                                  |
+| [BackgroundStyle](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithBackgroundStyle) | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
+| [FullWidth](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithFullWidth)             | ...bool                                                    |
+| [Margin](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithMargin)                   | int                                                        |
+| [TextStyle](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithTextStyle)             | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
+| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithWriter)                   | io.Writer                                                  |
 
 ### Output functions
 
-> This printer implements the interface [`TextPrinter`](https://github.com/pterm/pterm/blob/master/interface_text_printer.go)
+> This printer implements the interface [`TextPrinter`](https://github.com/forvitinn/pterm/blob/master/interface_text_printer.go)
 
 | Function                                   | Description                                                                                  |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
