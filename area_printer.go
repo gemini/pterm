@@ -4,13 +4,9 @@ import (
 	"strings"
 
 	"atomicgo.dev/cursor"
-<<<<<<< HEAD
 	"github.com/forvitinn/pterm/internal"
 	"github.com/jroimartin/gocui"
-=======
-
-	"github.com/forvitinn/pterm/internal"
->>>>>>> master
+	//"github.com/forvitinn/pterm/internal"
 )
 
 // DefaultArea is the default area printer.
@@ -129,34 +125,34 @@ func (p *AreaPrinter) GenericStop() (*LivePrinter, error) {
 }
 //not in use & not tested
 //WIP
-func (area AreaPrinter) GHandleManagers(KeyBinds map[string]KeyDescriptor, managers ...gocui.Manager) (err error) {
-	// pause pterm ui
-	// used to copy data before hiding isActive
-	area.Stop()
-	// ...
-	// gocui initialize
+func (area AreaPrinter) GHandleManagers(kd GMapView2KeyDesc, managers ...gocui.Manager) error {
 	g, err := gocui.NewGui(gocui.Output256)
 	if err != nil {
 		return err
 	}
-	//defer the showing of pterm ui
+	// defer the showing of pterm ui
 	defer func() {
 		g.Close()
 	}()
 	g.SetManager(managers...)
-	// set KeyBinds
-	for view, val := range KeyBinds {
-		if err := g.SetKeybinding(view, val.Key, val.Mod, val.KeyFunc); err != nil {
-			return err
+
+	// set all keybindings on each view
+	for view, kd_instance := range kd {
+		if err := g.SetKeybinding(view, kd_instance.Key, kd_instance.Mod, kd_instance.KeyFunc); err != nil {
+			return nil
 		}
 	}
+	// start mainloop
 	if err := g.MainLoop(); err != nil && err != gocui.ErrQuit {
 		return err
 	}
-	return err
+	return nil
 }
 
-func (p *AreaPrinter) GHandleFunc(glay GLayout,kd GMapView2KeyDesc) error {
+// Give control over UI over to Gocui from pterm.area
+// This function must be provided with a gocui layout and a Map which maps Layout Views(Strings) to Keybins and their functions
+
+func (p *AreaPrinter) GHandleFunc(kd GMapView2KeyDesc, glay GLayout) error {
 	g, err := gocui.NewGui(gocui.Output256)
 	if err != nil {
 		return err
@@ -171,6 +167,7 @@ func (p *AreaPrinter) GHandleFunc(glay GLayout,kd GMapView2KeyDesc) error {
 			return nil
 		}
 	}
+
 	// start mainloop
 	if err := g.MainLoop(); err != nil && err != gocui.ErrQuit {
 		return err
