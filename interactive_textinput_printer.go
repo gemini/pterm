@@ -214,3 +214,9 @@ func (p *InteractiveTextInputPrinter) updateArea(area *AreaPrinter) string {
 	}
 	return areaText
 }
+func (p *InteractiveTextInputPrinter) Clear(i int) {
+       if i == 1 {
+               p.input = make([]string,0)
+       }
+       p.text = ""
+}
