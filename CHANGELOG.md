@@ -85,7 +85,7 @@
 <a name="v0.12.34"></a>
 ## [v0.12.34] - 2022-01-16
 ### Bug Fixes
-- **progressbar:** refresh progressbars on every PTerm print ([#302](https://github.com/forvitinn/pterm/issues/302))
+- **progressbar:** refresh progressbars on every PTerm print ([#302](https://github.com/gemini/pterm/issues/302))
 
 ### Test
 - removed `AreaPrinter` test output
@@ -95,9 +95,9 @@
 <a name="v0.12.33"></a>
 ## [v0.12.33] - 2021-10-24
 ### Features
-- add `PrintOnErrorf` for every `TextPrinter` ([#279](https://github.com/forvitinn/pterm/issues/279))
+- add `PrintOnErrorf` for every `TextPrinter` ([#279](https://github.com/gemini/pterm/issues/279))
 - **coverage:** add unit test
-- **progressbar:** made updating the progressbar title easier. ([#267](https://github.com/forvitinn/pterm/issues/267))
+- **progressbar:** made updating the progressbar title easier. ([#267](https://github.com/gemini/pterm/issues/267))
 - **table:** increase test coverage
 - **table:** revamp to follow practice
 - **table:** add support for right data alignment
@@ -217,7 +217,7 @@
 <a name="v0.12.23"></a>
 ## [v0.12.23] - 2021-06-07
 ### Features
-- Add util functions to create tables from slices of structs ([#217](https://github.com/forvitinn/pterm/issues/217))
+- Add util functions to create tables from slices of structs ([#217](https://github.com/gemini/pterm/issues/217))
 
 ### Bug Fixes
 - **headerprinter:** don't panic if content width > terminal width
@@ -261,7 +261,7 @@
 ## [v0.12.19] - 2021-05-29
 ### Features
 - add `PrintOnError` for all printers and interface
-- **putils:** add `putils` package ([#206](https://github.com/forvitinn/pterm/issues/206))
+- **putils:** add `putils` package ([#206](https://github.com/gemini/pterm/issues/206))
 
 ### Bug Fixes
 - **header:** fix multiline header
@@ -366,7 +366,7 @@
 <a name="v0.12.13"></a>
 ## [v0.12.13] - 2021-04-10
 ### Bug Fixes
-- **bigtext:** fix height of some characters [#180](https://github.com/forvitinn/pterm/issues/180)
+- **bigtext:** fix height of some characters [#180](https://github.com/gemini/pterm/issues/180)
 - **color:** make color implement `TextPrinter`
 
 ### Test
@@ -458,7 +458,7 @@
 <a name="v0.12.6"></a>
 ## [v0.12.6] - 2020-11-17
 ### Bug Fixes
-- disabling output works as expected now ([#149](https://github.com/forvitinn/pterm/issues/149))
+- disabling output works as expected now ([#149](https://github.com/gemini/pterm/issues/149))
 
 
 <a name="v0.12.5"></a>
@@ -530,7 +530,7 @@
 - **tree:** change `Tree` to `TreePrinter`
 
 ### Code Refactoring
-- make all printer names end with `Printer` ([#134](https://github.com/forvitinn/pterm/issues/134))
+- make all printer names end with `Printer` ([#134](https://github.com/gemini/pterm/issues/134))
 - **bulletlist:** remove `DefaultBulletListItem`
 - **bulletlist:** `BulletListItem` remove `Render` and `Srender`
 - **bulletlist:** `BulletListItem` is no renderable anymore
@@ -601,13 +601,13 @@ make centerprinter func `WithCenterEachLineSeparately` return a pointer of cente
 ## [v0.10.0] - 2020-11-01
 ### Features
 - make printers return errors
-- add `DisableOutput()` and `EnableOutput()` ([#108](https://github.com/forvitinn/pterm/issues/108))
+- add `DisableOutput()` and `EnableOutput()` ([#108](https://github.com/gemini/pterm/issues/108))
 
 ### Code Refactoring
 - ignore errors where no errors can occur
-- **theme:** change `ListTextStyle` to `BulletListTextStyle` ([#104](https://github.com/forvitinn/pterm/issues/104))
-- **theme:** change `ProgressbarBarStyle` to `FgCyan` ([#106](https://github.com/forvitinn/pterm/issues/106))
-- **theme:** change white to default color in `Theme` ([#103](https://github.com/forvitinn/pterm/issues/103))
+- **theme:** change `ListTextStyle` to `BulletListTextStyle` ([#104](https://github.com/gemini/pterm/issues/104))
+- **theme:** change `ProgressbarBarStyle` to `FgCyan` ([#106](https://github.com/gemini/pterm/issues/106))
+- **theme:** change white to default color in `Theme` ([#103](https://github.com/gemini/pterm/issues/103))
 
 ### BREAKING CHANGE
 
@@ -690,16 +690,16 @@ Changed `NewList` to `NewBulletList`.
 <a name="v0.8.0"></a>
 ## [v0.8.0] - 2020-10-24
 ### Features
-- add `BigTextPrinter` ([#75](https://github.com/forvitinn/pterm/issues/75))
+- add `BigTextPrinter` ([#75](https://github.com/gemini/pterm/issues/75))
 - use level of section printer
-- add `BulletListPrinter` ([#67](https://github.com/forvitinn/pterm/issues/67))
+- add `BulletListPrinter` ([#67](https://github.com/gemini/pterm/issues/67))
 
 ### Test
 - test that `%s` won't fail to print
 
 ### Code Refactoring
 - make `BigTextPrinter` release ready
-- change `LineCharacter` to `BarCharacter` ([#70](https://github.com/forvitinn/pterm/issues/70))
+- change `LineCharacter` to `BarCharacter` ([#70](https://github.com/gemini/pterm/issues/70))
 
 ### BREAKING CHANGE
 
@@ -785,15 +785,15 @@ TextPrinter now requires to return a pointer.
 <a name="v0.5.1"></a>
 ## [v0.5.1] - 2020-10-14
 ### Features
-- add ability to disable output ([#44](https://github.com/forvitinn/pterm/issues/44))
+- add ability to disable output ([#44](https://github.com/gemini/pterm/issues/44))
 - add `Srender` to `RenderPrinter` interface
-- add csv table support ([#42](https://github.com/forvitinn/pterm/issues/42))
-- add HEX to RGB converter in `RGB` ([#41](https://github.com/forvitinn/pterm/issues/41))
+- add csv table support ([#42](https://github.com/gemini/pterm/issues/42))
+- add HEX to RGB converter in `RGB` ([#41](https://github.com/gemini/pterm/issues/41))
 - add theme to generated animations
-- add color fade example ([#38](https://github.com/forvitinn/pterm/issues/38))
+- add color fade example ([#38](https://github.com/gemini/pterm/issues/38))
 - implement `TextPrinter` into `RGB`
-- implement color fade to `Progressbar` ([#37](https://github.com/forvitinn/pterm/issues/37))
-- add color fade function and `RBG` ([#34](https://github.com/forvitinn/pterm/issues/34))
+- implement color fade to `Progressbar` ([#37](https://github.com/gemini/pterm/issues/37))
+- add color fade function and `RBG` ([#34](https://github.com/gemini/pterm/issues/34))
 - change `Section` style
 
 ### Code Refactoring
@@ -808,8 +808,8 @@ TextPrinter now requires to return a pointer.
 - add `RenderPrinter` interface
 - implement `LivePrinter` in `Progressbar`
 - add `LivePrinter` interface
-- add `TablePrinter` ([#27](https://github.com/forvitinn/pterm/issues/27))
-- add `ParagraphPrinter` ([#24](https://github.com/forvitinn/pterm/issues/24))
+- add `TablePrinter` ([#27](https://github.com/gemini/pterm/issues/27))
+- add `ParagraphPrinter` ([#24](https://github.com/gemini/pterm/issues/24))
 
 ### Test
 - add `Print` equals `Sprint` tests for `GenericPrinter`
@@ -927,9 +927,9 @@ rename `Header` to `DefaultHeader`
 - make progressbar configurable
 - add percentage helper
 - add `RemoveColors`
-- add `Progressbar` ([#5](https://github.com/forvitinn/pterm/issues/5))
+- add `Progressbar` ([#5](https://github.com/gemini/pterm/issues/5))
 - add `Progressbar`
-- add fatal to `PrefixPrinter` ([#4](https://github.com/forvitinn/pterm/issues/4))
+- add fatal to `PrefixPrinter` ([#4](https://github.com/gemini/pterm/issues/4))
 - **progressbar:** fade percentage color according to value
 
 ### Code Refactoring
@@ -1015,73 +1015,73 @@ removed `Header` and put it's content directly into `HeaderPrinter`
 - initial commit
 
 
-[Unreleased]: https://github.com/forvitinn/pterm/compare/v0.12.42...HEAD
-[v0.12.42]: https://github.com/forvitinn/pterm/compare/v0.12.41...v0.12.42
-[v0.12.41]: https://github.com/forvitinn/pterm/compare/v0.12.40...v0.12.41
-[v0.12.40]: https://github.com/forvitinn/pterm/compare/v0.12.39...v0.12.40
-[v0.12.39]: https://github.com/forvitinn/pterm/compare/v0.12.38...v0.12.39
-[v0.12.38]: https://github.com/forvitinn/pterm/compare/v0.12.37...v0.12.38
-[v0.12.37]: https://github.com/forvitinn/pterm/compare/v0.12.36...v0.12.37
-[v0.12.36]: https://github.com/forvitinn/pterm/compare/v0.12.35...v0.12.36
-[v0.12.35]: https://github.com/forvitinn/pterm/compare/v0.12.34...v0.12.35
-[v0.12.34]: https://github.com/forvitinn/pterm/compare/v0.12.33...v0.12.34
-[v0.12.33]: https://github.com/forvitinn/pterm/compare/v0.12.32...v0.12.33
-[v0.12.32]: https://github.com/forvitinn/pterm/compare/v0.12.31...v0.12.32
-[v0.12.31]: https://github.com/forvitinn/pterm/compare/v0.12.30...v0.12.31
-[v0.12.30]: https://github.com/forvitinn/pterm/compare/v0.12.29...v0.12.30
-[v0.12.29]: https://github.com/forvitinn/pterm/compare/v0.12.28...v0.12.29
-[v0.12.28]: https://github.com/forvitinn/pterm/compare/v0.12.27...v0.12.28
-[v0.12.27]: https://github.com/forvitinn/pterm/compare/v0.12.26...v0.12.27
-[v0.12.26]: https://github.com/forvitinn/pterm/compare/v0.12.25...v0.12.26
-[v0.12.25]: https://github.com/forvitinn/pterm/compare/v0.12.24...v0.12.25
-[v0.12.24]: https://github.com/forvitinn/pterm/compare/v0.12.23...v0.12.24
-[v0.12.23]: https://github.com/forvitinn/pterm/compare/v0.12.22...v0.12.23
-[v0.12.22]: https://github.com/forvitinn/pterm/compare/v0.12.21...v0.12.22
-[v0.12.21]: https://github.com/forvitinn/pterm/compare/v0.12.20...v0.12.21
-[v0.12.20]: https://github.com/forvitinn/pterm/compare/v0.12.19...v0.12.20
-[v0.12.19]: https://github.com/forvitinn/pterm/compare/v0.12.18...v0.12.19
-[v0.12.18]: https://github.com/forvitinn/pterm/compare/v0.12.17...v0.12.18
-[v0.12.17]: https://github.com/forvitinn/pterm/compare/v0.12.16...v0.12.17
-[v0.12.16]: https://github.com/forvitinn/pterm/compare/v0.12.15...v0.12.16
-[v0.12.15]: https://github.com/forvitinn/pterm/compare/v0.12.14...v0.12.15
-[v0.12.14]: https://github.com/forvitinn/pterm/compare/v0.12.13...v0.12.14
-[v0.12.13]: https://github.com/forvitinn/pterm/compare/v0.12.12...v0.12.13
-[v0.12.12]: https://github.com/forvitinn/pterm/compare/v0.12.11...v0.12.12
-[v0.12.11]: https://github.com/forvitinn/pterm/compare/v0.12.10...v0.12.11
-[v0.12.10]: https://github.com/forvitinn/pterm/compare/v0.12.9...v0.12.10
-[v0.12.9]: https://github.com/forvitinn/pterm/compare/v0.12.8...v0.12.9
-[v0.12.8]: https://github.com/forvitinn/pterm/compare/v0.12.7...v0.12.8
-[v0.12.7]: https://github.com/forvitinn/pterm/compare/v0.12.6...v0.12.7
-[v0.12.6]: https://github.com/forvitinn/pterm/compare/v0.12.5...v0.12.6
-[v0.12.5]: https://github.com/forvitinn/pterm/compare/v0.12.4...v0.12.5
-[v0.12.4]: https://github.com/forvitinn/pterm/compare/v0.12.3...v0.12.4
-[v0.12.3]: https://github.com/forvitinn/pterm/compare/v0.12.2...v0.12.3
-[v0.12.2]: https://github.com/forvitinn/pterm/compare/v0.12.1...v0.12.2
-[v0.12.1]: https://github.com/forvitinn/pterm/compare/v0.12.0...v0.12.1
-[v0.12.0]: https://github.com/forvitinn/pterm/compare/v0.11.0...v0.12.0
-[v0.11.0]: https://github.com/forvitinn/pterm/compare/v0.10.1...v0.11.0
-[v0.10.1]: https://github.com/forvitinn/pterm/compare/v0.10.0...v0.10.1
-[v0.10.0]: https://github.com/forvitinn/pterm/compare/v0.9.3...v0.10.0
-[v0.9.3]: https://github.com/forvitinn/pterm/compare/v0.9.2...v0.9.3
-[v0.9.2]: https://github.com/forvitinn/pterm/compare/v0.9.1...v0.9.2
-[v0.9.1]: https://github.com/forvitinn/pterm/compare/v0.9.0...v0.9.1
-[v0.9.0]: https://github.com/forvitinn/pterm/compare/v0.8.1...v0.9.0
-[v0.8.1]: https://github.com/forvitinn/pterm/compare/v0.8.0...v0.8.1
-[v0.8.0]: https://github.com/forvitinn/pterm/compare/v0.7.0...v0.8.0
-[v0.7.0]: https://github.com/forvitinn/pterm/compare/v0.6.1...v0.7.0
-[v0.6.1]: https://github.com/forvitinn/pterm/compare/v0.6.0...v0.6.1
-[v0.6.0]: https://github.com/forvitinn/pterm/compare/v0.5.1...v0.6.0
-[v0.5.1]: https://github.com/forvitinn/pterm/compare/v0.5.0...v0.5.1
-[v0.5.0]: https://github.com/forvitinn/pterm/compare/v0.4.1...v0.5.0
-[v0.4.1]: https://github.com/forvitinn/pterm/compare/v0.4.0...v0.4.1
-[v0.4.0]: https://github.com/forvitinn/pterm/compare/v0.3.2...v0.4.0
-[v0.3.2]: https://github.com/forvitinn/pterm/compare/v0.3.1...v0.3.2
-[v0.3.1]: https://github.com/forvitinn/pterm/compare/v0.3.0...v0.3.1
-[v0.3.0]: https://github.com/forvitinn/pterm/compare/v0.2.4...v0.3.0
-[v0.2.4]: https://github.com/forvitinn/pterm/compare/v0.2.3...v0.2.4
-[v0.2.3]: https://github.com/forvitinn/pterm/compare/v0.2.2...v0.2.3
-[v0.2.2]: https://github.com/forvitinn/pterm/compare/v0.2.1...v0.2.2
-[v0.2.1]: https://github.com/forvitinn/pterm/compare/v0.2.0...v0.2.1
-[v0.2.0]: https://github.com/forvitinn/pterm/compare/v0.1.0...v0.2.0
-[v0.1.0]: https://github.com/forvitinn/pterm/compare/v0.0.1...v0.1.0
-[v0.0.1]: https://github.com/forvitinn/pterm/compare/v0.0.0...v0.0.1
+[Unreleased]: https://github.com/gemini/pterm/compare/v0.12.42...HEAD
+[v0.12.42]: https://github.com/gemini/pterm/compare/v0.12.41...v0.12.42
+[v0.12.41]: https://github.com/gemini/pterm/compare/v0.12.40...v0.12.41
+[v0.12.40]: https://github.com/gemini/pterm/compare/v0.12.39...v0.12.40
+[v0.12.39]: https://github.com/gemini/pterm/compare/v0.12.38...v0.12.39
+[v0.12.38]: https://github.com/gemini/pterm/compare/v0.12.37...v0.12.38
+[v0.12.37]: https://github.com/gemini/pterm/compare/v0.12.36...v0.12.37
+[v0.12.36]: https://github.com/gemini/pterm/compare/v0.12.35...v0.12.36
+[v0.12.35]: https://github.com/gemini/pterm/compare/v0.12.34...v0.12.35
+[v0.12.34]: https://github.com/gemini/pterm/compare/v0.12.33...v0.12.34
+[v0.12.33]: https://github.com/gemini/pterm/compare/v0.12.32...v0.12.33
+[v0.12.32]: https://github.com/gemini/pterm/compare/v0.12.31...v0.12.32
+[v0.12.31]: https://github.com/gemini/pterm/compare/v0.12.30...v0.12.31
+[v0.12.30]: https://github.com/gemini/pterm/compare/v0.12.29...v0.12.30
+[v0.12.29]: https://github.com/gemini/pterm/compare/v0.12.28...v0.12.29
+[v0.12.28]: https://github.com/gemini/pterm/compare/v0.12.27...v0.12.28
+[v0.12.27]: https://github.com/gemini/pterm/compare/v0.12.26...v0.12.27
+[v0.12.26]: https://github.com/gemini/pterm/compare/v0.12.25...v0.12.26
+[v0.12.25]: https://github.com/gemini/pterm/compare/v0.12.24...v0.12.25
+[v0.12.24]: https://github.com/gemini/pterm/compare/v0.12.23...v0.12.24
+[v0.12.23]: https://github.com/gemini/pterm/compare/v0.12.22...v0.12.23
+[v0.12.22]: https://github.com/gemini/pterm/compare/v0.12.21...v0.12.22
+[v0.12.21]: https://github.com/gemini/pterm/compare/v0.12.20...v0.12.21
+[v0.12.20]: https://github.com/gemini/pterm/compare/v0.12.19...v0.12.20
+[v0.12.19]: https://github.com/gemini/pterm/compare/v0.12.18...v0.12.19
+[v0.12.18]: https://github.com/gemini/pterm/compare/v0.12.17...v0.12.18
+[v0.12.17]: https://github.com/gemini/pterm/compare/v0.12.16...v0.12.17
+[v0.12.16]: https://github.com/gemini/pterm/compare/v0.12.15...v0.12.16
+[v0.12.15]: https://github.com/gemini/pterm/compare/v0.12.14...v0.12.15
+[v0.12.14]: https://github.com/gemini/pterm/compare/v0.12.13...v0.12.14
+[v0.12.13]: https://github.com/gemini/pterm/compare/v0.12.12...v0.12.13
+[v0.12.12]: https://github.com/gemini/pterm/compare/v0.12.11...v0.12.12
+[v0.12.11]: https://github.com/gemini/pterm/compare/v0.12.10...v0.12.11
+[v0.12.10]: https://github.com/gemini/pterm/compare/v0.12.9...v0.12.10
+[v0.12.9]: https://github.com/gemini/pterm/compare/v0.12.8...v0.12.9
+[v0.12.8]: https://github.com/gemini/pterm/compare/v0.12.7...v0.12.8
+[v0.12.7]: https://github.com/gemini/pterm/compare/v0.12.6...v0.12.7
+[v0.12.6]: https://github.com/gemini/pterm/compare/v0.12.5...v0.12.6
+[v0.12.5]: https://github.com/gemini/pterm/compare/v0.12.4...v0.12.5
+[v0.12.4]: https://github.com/gemini/pterm/compare/v0.12.3...v0.12.4
+[v0.12.3]: https://github.com/gemini/pterm/compare/v0.12.2...v0.12.3
+[v0.12.2]: https://github.com/gemini/pterm/compare/v0.12.1...v0.12.2
+[v0.12.1]: https://github.com/gemini/pterm/compare/v0.12.0...v0.12.1
+[v0.12.0]: https://github.com/gemini/pterm/compare/v0.11.0...v0.12.0
+[v0.11.0]: https://github.com/gemini/pterm/compare/v0.10.1...v0.11.0
+[v0.10.1]: https://github.com/gemini/pterm/compare/v0.10.0...v0.10.1
+[v0.10.0]: https://github.com/gemini/pterm/compare/v0.9.3...v0.10.0
+[v0.9.3]: https://github.com/gemini/pterm/compare/v0.9.2...v0.9.3
+[v0.9.2]: https://github.com/gemini/pterm/compare/v0.9.1...v0.9.2
+[v0.9.1]: https://github.com/gemini/pterm/compare/v0.9.0...v0.9.1
+[v0.9.0]: https://github.com/gemini/pterm/compare/v0.8.1...v0.9.0
+[v0.8.1]: https://github.com/gemini/pterm/compare/v0.8.0...v0.8.1
+[v0.8.0]: https://github.com/gemini/pterm/compare/v0.7.0...v0.8.0
+[v0.7.0]: https://github.com/gemini/pterm/compare/v0.6.1...v0.7.0
+[v0.6.1]: https://github.com/gemini/pterm/compare/v0.6.0...v0.6.1
+[v0.6.0]: https://github.com/gemini/pterm/compare/v0.5.1...v0.6.0
+[v0.5.1]: https://github.com/gemini/pterm/compare/v0.5.0...v0.5.1
+[v0.5.0]: https://github.com/gemini/pterm/compare/v0.4.1...v0.5.0
+[v0.4.1]: https://github.com/gemini/pterm/compare/v0.4.0...v0.4.1
+[v0.4.0]: https://github.com/gemini/pterm/compare/v0.3.2...v0.4.0
+[v0.3.2]: https://github.com/gemini/pterm/compare/v0.3.1...v0.3.2
+[v0.3.1]: https://github.com/gemini/pterm/compare/v0.3.0...v0.3.1
+[v0.3.0]: https://github.com/gemini/pterm/compare/v0.2.4...v0.3.0
+[v0.2.4]: https://github.com/gemini/pterm/compare/v0.2.3...v0.2.4
+[v0.2.3]: https://github.com/gemini/pterm/compare/v0.2.2...v0.2.3
+[v0.2.2]: https://github.com/gemini/pterm/compare/v0.2.1...v0.2.2
+[v0.2.1]: https://github.com/gemini/pterm/compare/v0.2.0...v0.2.1
+[v0.2.0]: https://github.com/gemini/pterm/compare/v0.1.0...v0.2.0
+[v0.1.0]: https://github.com/gemini/pterm/compare/v0.0.1...v0.1.0
+[v0.0.1]: https://github.com/gemini/pterm/compare/v0.0.0...v0.0.1

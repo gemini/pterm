@@ -6,7 +6,7 @@ import (
 
 	"github.com/mattn/go-runewidth"
 
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 )
 
 // Panel contains the data, which should be printed inside a PanelPrinter.

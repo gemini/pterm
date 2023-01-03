@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 )
 
 var (

@@ -3,7 +3,7 @@ package putils
 import (
 	"strings"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 // TableDataFromSeparatedValues converts values, separated by separator, into pterm.TableData.

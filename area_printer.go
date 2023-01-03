@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"atomicgo.dev/cursor"
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 	"github.com/jroimartin/gocui"
 )
 

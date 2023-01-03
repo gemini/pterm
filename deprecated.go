@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 )
 
 // NewLettersFromString creates a Letters object from a string, which is prefilled with the LetterStyle from ThemeDefault.

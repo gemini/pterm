@@ -8,7 +8,7 @@ import (
 
 	"github.com/MarvinJWendt/testza"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 func TestTablePrinter_NilPrint(t *testing.T) {

@@ -3,7 +3,7 @@ package internal_test
 import (
 	"testing"
 
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 )
 
 func TestPercentage(t *testing.T) {

@@ -3,7 +3,7 @@ package putils
 import (
 	"reflect"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 // TableFromStructSlice accepts a customized table printer and and a slice of a struct.

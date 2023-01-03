@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 // progressbarWriter counts the number of bytes written to it and adds those to a progressbar.

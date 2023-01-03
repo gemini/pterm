@@ -3,7 +3,7 @@
 //
 // Official docs are available at: https://docs.pterm.sh
 //
-// View the animated examples here: https://github.com/forvitinn/pterm#-examples
+// View the animated examples here: https://github.com/gemini/pterm#-examples
 package pterm
 
 import "github.com/gookit/color"

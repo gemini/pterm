@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 )
 
 // DefaultTable contains standards, which can be used to print a TablePrinter.

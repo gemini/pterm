@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/MarvinJWendt/testza"
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 func TestProgressbarPrinter_Add(t *testing.T) {

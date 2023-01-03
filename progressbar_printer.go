@@ -8,7 +8,7 @@ import (
 
 	"github.com/gookit/color"
 
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 )
 
 // ActiveProgressBarPrinters contains all running ProgressbarPrinters.

@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![ParagraphPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/paragraph/animation.svg)
 
-<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/paragraph/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/gemini/pterm/blob/master/_examples/paragraph/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -30,12 +30,12 @@ pterm.DefaultParagraph.Println("Hello, World!")
 
 | Option                                                                              | Type      |
 | ----------------------------------------------------------------------------------- | --------- |
-| [MaxWidth](https://pkg.go.dev/github.com/forvitinn/pterm#ParagraphPrinter.WithMaxWidth) | int       |
-| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#ParagraphPrinter.WithWriter)     | io.Writer |
+| [MaxWidth](https://pkg.go.dev/github.com/gemini/pterm#ParagraphPrinter.WithMaxWidth) | int       |
+| [Writer](https://pkg.go.dev/github.com/gemini/pterm#ParagraphPrinter.WithWriter)     | io.Writer |
 
 ### Output functions
 
-> This printer implements the interface [`TextPrinter`](https://github.com/forvitinn/pterm/blob/master/interface_text_printer.go)
+> This printer implements the interface [`TextPrinter`](https://github.com/gemini/pterm/blob/master/interface_text_printer.go)
 
 | Function                                   | Description                                                                                  |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------- |

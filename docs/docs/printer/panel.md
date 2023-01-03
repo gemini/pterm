@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![PanelPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/panel/animation.svg)
 
-<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/panel/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/gemini/pterm/blob/master/_examples/panel/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -37,16 +37,16 @@ _ = pterm.DefaultPanel.WithPanels(panels).Render()
 
 | Option                                                                                        | Type                                                               |
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [BottomPadding](https://pkg.go.dev/github.com/forvitinn/pterm#PanelPrinter.WithBottomPadding)     | int                                                                |
-| [BoxPrinter](https://pkg.go.dev/github.com/forvitinn/pterm#PanelPrinter.WithBoxPrinter)           | [BoxPrinter](https://pkg.go.dev/github.com/forvitinn/pterm#BoxPrinter) |
-| [Padding](https://pkg.go.dev/github.com/forvitinn/pterm#PanelPrinter.WithPadding)                 | int                                                                |
-| [Panels](https://pkg.go.dev/github.com/forvitinn/pterm#PanelPrinter.WithPanels)                   | [Panels](https://pkg.go.dev/github.com/forvitinn/pterm#Panels)         |
-| [SameColumnWidth](https://pkg.go.dev/github.com/forvitinn/pterm#PanelPrinter.WithSameColumnWidth) | ...bool                                                            |
-| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#PanelPrinter.WithWriter)                   | io.Writer                                                          |
+| [BottomPadding](https://pkg.go.dev/github.com/gemini/pterm#PanelPrinter.WithBottomPadding)     | int                                                                |
+| [BoxPrinter](https://pkg.go.dev/github.com/gemini/pterm#PanelPrinter.WithBoxPrinter)           | [BoxPrinter](https://pkg.go.dev/github.com/gemini/pterm#BoxPrinter) |
+| [Padding](https://pkg.go.dev/github.com/gemini/pterm#PanelPrinter.WithPadding)                 | int                                                                |
+| [Panels](https://pkg.go.dev/github.com/gemini/pterm#PanelPrinter.WithPanels)                   | [Panels](https://pkg.go.dev/github.com/gemini/pterm#Panels)         |
+| [SameColumnWidth](https://pkg.go.dev/github.com/gemini/pterm#PanelPrinter.WithSameColumnWidth) | ...bool                                                            |
+| [Writer](https://pkg.go.dev/github.com/gemini/pterm#PanelPrinter.WithWriter)                   | io.Writer                                                          |
 
 ### Output functions
 
-> This printer implements the interface [`RenderablePrinter`](https://github.com/forvitinn/pterm/blob/master/interface_renderable_printer.go)
+> This printer implements the interface [`RenderablePrinter`](https://github.com/gemini/pterm/blob/master/interface_renderable_printer.go)
 
 | Function  | Description        |
 | --------- | ------------------ |

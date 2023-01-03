@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 func do(title string, currentLevel int, f func(currentLevel int)) {

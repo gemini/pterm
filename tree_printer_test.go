@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/MarvinJWendt/testza"
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 func TestTreePrinterNilPrint(t *testing.T) {

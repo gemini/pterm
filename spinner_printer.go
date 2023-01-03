@@ -4,7 +4,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/forvitinn/pterm/internal"
+	"github.com/gemini/pterm/internal"
 )
 
 var activeSpinnerPrinters []*SpinnerPrinter

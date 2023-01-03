@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![SpinnerPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/spinner/animation.svg)
 
-<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/spinner/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/gemini/pterm/blob/master/_examples/spinner/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -21,10 +21,10 @@ pterm.DefaultSpinner.Start()
 
 | Function                                                                                               | Description                                                                                                                         |
 | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| [Fail(message ...interface{})](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.Fail)          | Fail displays the fail printer. If no message is given, the text of the SpinnerPrinter will be reused as the default message.       |
-| [Success(message ...interface{})](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.Success)    | Success displays the success printer. If no message is given, the text of the SpinnerPrinter will be reused as the default message. |
-| [UpdateText(text string)](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.UpdateText)         | UpdateText updates the message of the active SpinnerPrinter. Can be used live.                                                      |
-| [Warning(message ...interface{})](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.UpdateText) | Warning displays the warning printer. If no message is given, the text of the SpinnerPrinter will be reused as the default message. |
+| [Fail(message ...interface{})](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.Fail)          | Fail displays the fail printer. If no message is given, the text of the SpinnerPrinter will be reused as the default message.       |
+| [Success(message ...interface{})](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.Success)    | Success displays the success printer. If no message is given, the text of the SpinnerPrinter will be reused as the default message. |
+| [UpdateText(text string)](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.UpdateText)         | UpdateText updates the message of the active SpinnerPrinter. Can be used live.                                                      |
+| [Warning(message ...interface{})](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.UpdateText) | Warning displays the warning printer. If no message is given, the text of the SpinnerPrinter will be reused as the default message. |
 
 ### Options
 
@@ -39,20 +39,20 @@ pterm.DefaultSpinner.Start()
 
 | Option                                                                                                  | Type                                                       |
 | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [Delay](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithDelay)                             | time.Duration                                              |
-| [MessageStyle](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithMessageStyle)               | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
-| [RemoveWhenDone](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithRemoveWhenDone)           | ...bool                                                    |
-| [Sequence](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithSequence)                       | ...string                                                  |
-| [Style](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithStyle)                             | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
-| [Text](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithText)                               | string                                                     |
-| [ShowTimer](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithShowTimer)                     | ...bool                                                    |
-| [TimerRoundingFactor](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithTimerRoundingFactor) | time.Duration                                              |
-| [TimerStyle](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithTimerStyle)                   | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
-| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#SpinnerPrinter.WithWriter)                           | io.Writer                                                  |
+| [Delay](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithDelay)                             | time.Duration                                              |
+| [MessageStyle](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithMessageStyle)               | [\*Style](https://pkg.go.dev/github.com/gemini/pterm#Style) |
+| [RemoveWhenDone](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithRemoveWhenDone)           | ...bool                                                    |
+| [Sequence](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithSequence)                       | ...string                                                  |
+| [Style](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithStyle)                             | [\*Style](https://pkg.go.dev/github.com/gemini/pterm#Style) |
+| [Text](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithText)                               | string                                                     |
+| [ShowTimer](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithShowTimer)                     | ...bool                                                    |
+| [TimerRoundingFactor](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithTimerRoundingFactor) | time.Duration                                              |
+| [TimerStyle](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithTimerStyle)                   | [\*Style](https://pkg.go.dev/github.com/gemini/pterm#Style) |
+| [Writer](https://pkg.go.dev/github.com/gemini/pterm#SpinnerPrinter.WithWriter)                           | io.Writer                                                  |
 
 ### Output functions
 
-> This printer implements the interface [`LivePrinter`](https://github.com/forvitinn/pterm/blob/master/interface_live_printer.go)
+> This printer implements the interface [`LivePrinter`](https://github.com/gemini/pterm/blob/master/interface_live_printer.go)
 
 | Function       | Description                                         |
 | -------------- | --------------------------------------------------- |

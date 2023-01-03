@@ -3,7 +3,7 @@ package putils
 import (
 	"strings"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 // LettersFromString creates a Letters object from a string, which is prefilled with the LetterStyle from ThemeDefault.

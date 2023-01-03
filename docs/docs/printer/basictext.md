@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![BasicTextPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/basictext/animation.svg)
 
-<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/basictext/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/gemini/pterm/blob/master/_examples/basictext/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -30,12 +30,12 @@ pterm.DefaultBasicText.Println("Hello, World!")
 
 | Option                                                                          | Type                                                       |
 | ------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [Style](https://pkg.go.dev/github.com/forvitinn/pterm#BasicTextPrinter.WithStyle)   | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
-| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#BasicTextPrinter.WithWriter) | io.Writer                                                  |
+| [Style](https://pkg.go.dev/github.com/gemini/pterm#BasicTextPrinter.WithStyle)   | [\*Style](https://pkg.go.dev/github.com/gemini/pterm#Style) |
+| [Writer](https://pkg.go.dev/github.com/gemini/pterm#BasicTextPrinter.WithWriter) | io.Writer                                                  |
 
 ### Output functions
 
-> This printer implements the interface [`TextPrinter`](https://github.com/forvitinn/pterm/blob/master/interface_text_printer.go)
+> This printer implements the interface [`TextPrinter`](https://github.com/gemini/pterm/blob/master/interface_text_printer.go)
 
 | Function                                   | Description                                                                                  |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------- |

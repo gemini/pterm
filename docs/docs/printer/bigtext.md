@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![BigTextPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/bigtext/animation.svg)
 
-<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/bigtext/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/gemini/pterm/blob/master/_examples/bigtext/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -30,16 +30,16 @@ pterm.DefaultBigText.WithLetters(pterm.NewLettersFromString("Hello")).Render()
 
 | Option                                                                                      | Type                                                         |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| [Letters](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithLetters)             | [Letters](https://pkg.go.dev/github.com/forvitinn/pterm#Letters) |
-| [BigCharacters](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithBigCharacters) | map[string]string                                            |
-| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#BigTextPrinter.WithWriter)               | io.Writer                                                    |
+| [Letters](https://pkg.go.dev/github.com/gemini/pterm#BigTextPrinter.WithLetters)             | [Letters](https://pkg.go.dev/github.com/gemini/pterm#Letters) |
+| [BigCharacters](https://pkg.go.dev/github.com/gemini/pterm#BigTextPrinter.WithBigCharacters) | map[string]string                                            |
+| [Writer](https://pkg.go.dev/github.com/gemini/pterm#BigTextPrinter.WithWriter)               | io.Writer                                                    |
 
 ### Output functions
 
 <!-- Remove comment of the correct interface -->
 
 <!--
-> This printer implements the interface [`TextPrinter`](https://github.com/forvitinn/pterm/blob/master/interface_text_printer.go)
+> This printer implements the interface [`TextPrinter`](https://github.com/gemini/pterm/blob/master/interface_text_printer.go)
 
 |Function|Description|
 |------|---------|
@@ -51,7 +51,7 @@ pterm.DefaultBigText.WithLetters(pterm.NewLettersFromString("Hello")).Render()
 |Printf(format string, a ...interface{})|Prints to the terminal, formatted according to a format specifier|
 -->
 
-> This printer implements the interface [`RenderablePrinter`](https://github.com/forvitinn/pterm/blob/master/interface_renderable_printer.go)
+> This printer implements the interface [`RenderablePrinter`](https://github.com/gemini/pterm/blob/master/interface_renderable_printer.go)
 
 | Function  | Description        |
 | --------- | ------------------ |
@@ -59,7 +59,7 @@ pterm.DefaultBigText.WithLetters(pterm.NewLettersFromString("Hello")).Render()
 | Srender() | Returns a string   |
 
 <!--
-> This printer implements the interface [`LivePrinter`](https://github.com/forvitinn/pterm/blob/master/interface_live_printer.go)
+> This printer implements the interface [`LivePrinter`](https://github.com/gemini/pterm/blob/master/interface_live_printer.go)
 
 |Function|Description|
 |------|---------|

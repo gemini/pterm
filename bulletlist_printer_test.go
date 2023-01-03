@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/MarvinJWendt/testza"
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 func TestBulletListPrinterNilPrint(t *testing.T) {

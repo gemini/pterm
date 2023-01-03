@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 // RGBFromHEX converts a HEX and returns a new RGB.

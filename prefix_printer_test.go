@@ -9,7 +9,7 @@ import (
 
 	"github.com/MarvinJWendt/testza"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 var prefixPrinters = []pterm.PrefixPrinter{pterm.Info, pterm.Success, pterm.Warning, pterm.Error, *pterm.Fatal.WithFatal(false)}

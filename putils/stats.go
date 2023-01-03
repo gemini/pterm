@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 // PrintAverageExecutionTime times the average execution time of a function.

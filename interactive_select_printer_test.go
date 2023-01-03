@@ -7,7 +7,7 @@ import (
 	"atomicgo.dev/keyboard/keys"
 	"github.com/MarvinJWendt/testza"
 
-	"github.com/forvitinn/pterm"
+	"github.com/gemini/pterm"
 )
 
 func TestInteractiveSelectPrinter_Show(t *testing.T) {

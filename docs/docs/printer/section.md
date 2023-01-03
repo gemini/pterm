@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![SectionPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/section/animation.svg)
 
-<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/section/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/gemini/pterm/blob/master/_examples/section/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -30,16 +30,16 @@ pterm.DefaultSection.Println("Hello, World!")
 
 | Option                                                                                          | Type                                                       |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [BottomPadding](https://pkg.go.dev/github.com/forvitinn/pterm#SectionPrinter.WithBottomPadding)     | int                                                        |
-| [IndentCharacter](https://pkg.go.dev/github.com/forvitinn/pterm#SectionPrinter.WithIndentCharacter) | string                                                     |
-| [Level](https://pkg.go.dev/github.com/forvitinn/pterm#SectionPrinter.WithLevel)                     | int                                                        |
-| [TopPadding](https://pkg.go.dev/github.com/forvitinn/pterm#SectionPrinter.WithTopPadding)           | int                                                        |
-| [Style](https://pkg.go.dev/github.com/forvitinn/pterm#SectionPrinter.WithStyle)                     | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
-| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#SectionPrinter.WithWriter)                   | io.Writer                                                  |
+| [BottomPadding](https://pkg.go.dev/github.com/gemini/pterm#SectionPrinter.WithBottomPadding)     | int                                                        |
+| [IndentCharacter](https://pkg.go.dev/github.com/gemini/pterm#SectionPrinter.WithIndentCharacter) | string                                                     |
+| [Level](https://pkg.go.dev/github.com/gemini/pterm#SectionPrinter.WithLevel)                     | int                                                        |
+| [TopPadding](https://pkg.go.dev/github.com/gemini/pterm#SectionPrinter.WithTopPadding)           | int                                                        |
+| [Style](https://pkg.go.dev/github.com/gemini/pterm#SectionPrinter.WithStyle)                     | [\*Style](https://pkg.go.dev/github.com/gemini/pterm#Style) |
+| [Writer](https://pkg.go.dev/github.com/gemini/pterm#SectionPrinter.WithWriter)                   | io.Writer                                                  |
 
 ### Output functions
 
-> This printer implements the interface [`TextPrinter`](https://github.com/forvitinn/pterm/blob/master/interface_text_printer.go)
+> This printer implements the interface [`TextPrinter`](https://github.com/gemini/pterm/blob/master/interface_text_printer.go)
 
 | Function                                   | Description                                                                                  |
 | ------------------------------------------ | -------------------------------------------------------------------------------------------- |

@@ -7,7 +7,7 @@ Replace all of the following strings with the current printer.
 
 ![ProgressbarPrinter Example](https://raw.githubusercontent.com/pterm/pterm/master/_examples/progressbar/animation.svg)
 
-<p align="center"><a href="https://github.com/forvitinn/pterm/blob/master/_examples/progressbar/main.go" target="_blank">(Show source of demo)</a></p>
+<p align="center"><a href="https://github.com/gemini/pterm/blob/master/_examples/progressbar/main.go" target="_blank">(Show source of demo)</a></p>
 
 ## Usage
 
@@ -24,10 +24,10 @@ progressbar.Increment()
 
 | Function                                                                                              | Description                                                                        |
 | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Add(count int)](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.Add)                    | Add `count` to current value.                                                      |
-| [GetElapsedTime()](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.GetElapsedTime)       | GetElapsedTime returns the elapsed time, since the ProgressbarPrinter was started. |
-| [Increment()](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.Increment)                 | Increment current value by one.                                                    |
-| [UpdateTitle(title string)](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.UpdateTitle) | Update the progressbar's title.                                                    |
+| [Add(count int)](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.Add)                    | Add `count` to current value.                                                      |
+| [GetElapsedTime()](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.GetElapsedTime)       | GetElapsedTime returns the elapsed time, since the ProgressbarPrinter was started. |
+| [Increment()](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.Increment)                 | Increment current value by one.                                                    |
+| [UpdateTitle(title string)](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.UpdateTitle) | Update the progressbar's title.                                                    |
 
 ### Options
 
@@ -42,26 +42,26 @@ progressbar.Increment()
 
 | Option                                                                                                                  | Type                                                       |
 | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [BarCharacter](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithBarCharacter)                           | string                                                     |
-| [BarStyle](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithBarStyle)                                   | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
-| [Current](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithCurrent)                                     | int                                                        |
-| [ElapsedTimeRoundingFactor](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithElapsedTimeRoundingFactor) | time.Duration                                              |
-| [LastCharacter](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithLastCharacter)                         | string                                                     |
-| [RemoveWhenDone](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithRemoveWhenDone)                       | ...bool                                                    |
-| [ShowCount](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithShowCount)                                 | ...bool                                                    |
-| [ShowElapsedTime](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithShowElapsedTime)                     | ...bool                                                    |
-| [ShowPercentage](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithShowPercentage)                       | ...bool                                                    |
-| [ShowTitle](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithShowTitle)                                 | ...bool                                                    |
-| [Title](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithTitle)                                         | string                                                     |
-| [TitleStyle](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithTitleStyle)                               | [\*Style](https://pkg.go.dev/github.com/forvitinn/pterm#Style) |
-| [Total](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithTotal)                                         | int                                                        |
-| [BarFiller](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithBarFiller)                                 | string                                                     |
-| [MaxWidth](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithMaxWidth)                                   | int                                                        |
-| [Writer](https://pkg.go.dev/github.com/forvitinn/pterm#ProgressbarPrinter.WithWriter)                                       | io.Writer                                                  |
+| [BarCharacter](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithBarCharacter)                           | string                                                     |
+| [BarStyle](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithBarStyle)                                   | [\*Style](https://pkg.go.dev/github.com/gemini/pterm#Style) |
+| [Current](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithCurrent)                                     | int                                                        |
+| [ElapsedTimeRoundingFactor](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithElapsedTimeRoundingFactor) | time.Duration                                              |
+| [LastCharacter](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithLastCharacter)                         | string                                                     |
+| [RemoveWhenDone](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithRemoveWhenDone)                       | ...bool                                                    |
+| [ShowCount](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithShowCount)                                 | ...bool                                                    |
+| [ShowElapsedTime](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithShowElapsedTime)                     | ...bool                                                    |
+| [ShowPercentage](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithShowPercentage)                       | ...bool                                                    |
+| [ShowTitle](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithShowTitle)                                 | ...bool                                                    |
+| [Title](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithTitle)                                         | string                                                     |
+| [TitleStyle](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithTitleStyle)                               | [\*Style](https://pkg.go.dev/github.com/gemini/pterm#Style) |
+| [Total](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithTotal)                                         | int                                                        |
+| [BarFiller](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithBarFiller)                                 | string                                                     |
+| [MaxWidth](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithMaxWidth)                                   | int                                                        |
+| [Writer](https://pkg.go.dev/github.com/gemini/pterm#ProgressbarPrinter.WithWriter)                                       | io.Writer                                                  |
 
 ### Output functions
 
-> This printer implements the interface [`LivePrinter`](https://github.com/forvitinn/pterm/blob/master/interface_live_printer.go)
+> This printer implements the interface [`LivePrinter`](https://github.com/gemini/pterm/blob/master/interface_live_printer.go)
 
 | Function       | Description                                         |
 | -------------- | --------------------------------------------------- |
